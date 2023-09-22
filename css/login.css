@@ -13,8 +13,22 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
+#header {
+   background-color: #0db7ce;
+   height: 100hv;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 10px;
+}
+
+input[type="username/phonenumber"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -22,6 +36,22 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.form-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password-link{
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password-link hover:{
+    text-decoration: underline;
 }
 
 input[type="submit"] {
@@ -57,4 +87,3 @@ form > br {
     display: block;
     content: '';
     margin-bottom: 15px;
-}
